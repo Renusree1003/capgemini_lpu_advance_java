@@ -8,13 +8,13 @@ public class ProductMain {
         ProductDetails pd = new ProductDetails();
 
         // INSERT
-//        Product p = new Product();
-//        p.setId(2);
-//        p.setName("phone");
-//        p.setQuantity(2);
-//        p.setPrice(51000);
-//
-//        pd.insertProduct(p);
+        Product p = new Product();
+        p.setId(4);
+        p.setName("chocolate");
+        p.setQuantity(2);
+        p.setPrice(10);
+
+        pd.insertProduct(p);
 
         // FIND
 //        Product found = pd.findProduct(1);
@@ -34,7 +34,7 @@ public class ProductMain {
 //        pd.deleteProduct(1);
         
         //FIND ALL 
-        pd.findAll();
+        //pd.findAll();
 
         pd.close();
     }

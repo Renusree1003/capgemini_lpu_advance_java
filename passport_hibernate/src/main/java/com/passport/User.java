@@ -9,14 +9,14 @@ public class User {
         PassportDAO dao = new PassportDAO();
 
         // INSERT
-//        Passport p = new Passport();
-//        p.setPassportNo(1);
-//        p.setName("Submi");
-//        p.setGender("Female");
-//        p.setAddress("Hyderabad");
-//        p.setNoOfTravels(3);
-//
-//        System.out.println(dao.insert(p));
+        Passport p = new Passport();
+        p.setPassportNo(1);
+        p.setName("Submi");
+        p.setGender("Female");
+        p.setAddress("Hyderabad");
+        p.setNoOfTravels(3);
+
+        System.out.println(dao.insert(p));
 
         // FIND
 //        Passport found = dao.find(1);
@@ -37,16 +37,16 @@ public class User {
 //        System.out.println(dao.delete(1));
 
         // FIND ALL
-        List<Passport> list = dao.findAll();
-        for (Passport p : list) {
-            System.out.println(
-                    p.getPassportNo() + " " +
-                    p.getName() + " " +
-                    p.getGender() + " " +
-                    p.getAddress() + " " +
-                    p.getNoOfTravels()
-            );
-        }
+//        List<Passport> list = dao.findAll();
+//        for (Passport p : list) {
+//            System.out.println(
+//                    p.getPassportNo() + " " +
+//                    p.getName() + " " +
+//                    p.getGender() + " " +
+//                    p.getAddress() + " " +
+//                    p.getNoOfTravels()
+//            );
+//        }
 
         dao.close();
     }
