@@ -18,6 +18,12 @@ public class Car {
 	public int getId() {
 		return id;
 	}
+	public Engine getEngine() {
+		return engine;
+	}
+	public void setEngine(Engine engine) {
+		this.engine = engine;
+	}
 	public void setId(int id) {
 		this.id = id;
 	}
@@ -48,7 +54,7 @@ public class Car {
 	@Override
 	public String toString() {
 		return "Car [id=" + id + ", brand=" + brand + ", model=" + model + ", modelYear=" + modelYear + ", price="
-				+ price + "]";
+				+ price + ", engine=" + engine + "]";
 	}
 	
 

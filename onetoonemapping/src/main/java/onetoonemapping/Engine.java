@@ -13,11 +13,11 @@ public class Engine {
 	private String mileage;
 	private String cc;
 	
-	@OneToOne
-	private Car car;
+	
 	public int getId() {
 		return id;
 	}
+	
 	public void setId(int id) {
 		this.id = id;
 	}
