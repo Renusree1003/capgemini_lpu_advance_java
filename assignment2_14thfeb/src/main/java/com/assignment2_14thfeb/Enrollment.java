@@ -13,6 +13,13 @@ public class Enrollment {
 	
 	@ManyToOne
 	private Course course;
+	
+	public Course getCourse() {
+		return course;
+	}
+	public void setCourse(Course course) {
+		this.course = course;
+	}
 	public int getEnrollment_id() {
 		return enrollment_id;
 	}
