@@ -14,7 +14,8 @@ public class College {
 	private String location;
 	private String pincode;
 	
-	@OneToMany
+	@OneToMany(mappedBy = "college")
+	
 	private List<Student> student;
 	
 	

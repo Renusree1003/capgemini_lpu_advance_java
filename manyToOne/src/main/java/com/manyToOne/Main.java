@@ -12,21 +12,21 @@ public class Main {
 		EntityTransaction et = em.getTransaction();
 		
 		Department d1 = new Department();
-		d1.setDept_id(1);
+		//d1.setDept_id(1);
 		d1.setDept_name("Analyst");
 		d1.setManager_name("Driti");
 		d1.setNoOfEmp(10);
 		
 		
 		Employee e1 = new Employee();
-		e1.setEmp_id(1);
+		//e1.setEmp_id(1);
 		e1.setName("Renu");
 		e1.setDesignation("Btech");
 		e1.setSalary(100000);
 		e1.setDepartment(d1);
 		
 		Employee e2 = new Employee();
-		e2.setEmp_id(2);
+		//e2.setEmp_id(2);
 		e2.setName("sree"); 
 		e2.setDesignation("Btech");
 		e2.setSalary(2000);

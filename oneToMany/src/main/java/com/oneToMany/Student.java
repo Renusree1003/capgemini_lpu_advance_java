@@ -2,6 +2,8 @@ package com.oneToMany;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Student {
@@ -10,7 +12,20 @@ public class Student {
 	private String sname;
 	private String branch;
 	
+	@ManyToOne
+	@JoinColumn
+	private College college;
 	
+	public College getCollege() {
+		return college;
+	}
+
+
+	public void setCollege(College college) {
+		this.college = college;
+	}
+
+
 	public int getSid() {
 		return sid;
 	}
