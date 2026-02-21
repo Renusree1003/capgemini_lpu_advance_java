@@ -17,7 +17,7 @@ public class Student {
 	private College college;
 	
 	public College getCollege() {
-		return college;
+		return college; 
 	}
 
 
